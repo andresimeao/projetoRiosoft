@@ -27,7 +27,7 @@ var http = {
         });
     },
     get: function (url) {
-        debugger;
+       
         return new Promise(function (resolve, reject) {
             $.ajax({
                 url: url,
@@ -37,7 +37,7 @@ var http = {
                     resolve(data);
                 },
                 error: function (a, b, c) {
-                    reject(a);
+                    reject(a);                  
                 }
             })
         });

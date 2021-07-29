@@ -5,9 +5,13 @@ namespace Controller;
 use \EasyFast\Exceptions\RouteException;
 
 class MainController {
-    public function index () {
-      return json_encode(['message' =>'Hello world']);
-    }
+    
+  //reposta tem que ser sempre um json
+  public function index () {
+   
+     
+      echo json_encode('André Simeão Ferreira');
+  }
 
     public function notfound() {
         throw new RouteException('Não encontramos nada', 404);

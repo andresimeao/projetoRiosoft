@@ -1,7 +1,8 @@
 <?php require 'header.php'?>
 
 
-    hello word !!
+    
+<h1></h1>
 
 <?php require 'footer.php'?>
     
