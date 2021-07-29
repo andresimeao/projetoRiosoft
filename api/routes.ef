@@ -1,0 +1,6 @@
+[MainController]
+name => index, url => index, action => index, request => GET, restful => true
+name => notfound, url => 404, action => notfound, httpStatus => 404
+
+
+

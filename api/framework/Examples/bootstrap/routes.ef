@@ -1,0 +1,6 @@
+[MainController]
+name => index, url => /, action => index
+name => notfound, url => 404, action => notFound, httpStatus => 404
+
+[CustomNamespace\ExampleController]
+name => routeName, url => route-url, action => methodName, request => POST, restful => true
