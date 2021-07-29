@@ -10,7 +10,7 @@ class MainController {
   public function index () {
    
      
-      echo json_encode('André Simeão Ferreira');
+      echo json_encode('Pedrinho matador');
   }
 
     public function notfound() {
