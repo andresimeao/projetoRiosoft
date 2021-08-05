@@ -7,7 +7,7 @@
     <div class="form-signin">
         <form action="" method="POST">
 
-            <center><img class="mb-4" src="images/riosoft.png" alt="" width="200"></center>
+            <center><img class="mb-3" src="images/riosoft.png" alt="" width="200"></center>
 
             <div class="form-floating">
                 <input type="email" class="form-control" name="login" id="login" placeholder="Email">

@@ -30,7 +30,7 @@
             </div>
 
             <div>
-            <center><label for="Login">
+            <center><label for="Login" class="text-center">
                 <a href="login.php">Já possuo cadastro!</a>
             </center></label>
             </div>
