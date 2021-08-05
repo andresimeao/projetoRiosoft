@@ -10,7 +10,7 @@
             <center><img class="mb-4" src="images/riosoft.png" alt="" width="200"></center>
 
             <div class="form-floating">
-                <input type="text" class="form-control" name="login" id="login" placeholder="Email">
+                <input type="email" class="form-control" name="login" id="login" placeholder="Email">
                 <label for="login">*Email</label>
             </div>
 

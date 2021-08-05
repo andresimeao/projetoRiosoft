@@ -10,12 +10,12 @@
             <center><img class="mb-4" src="images/riosoft.png" alt="" width="200"></center>
 
             <div class="form-floating">
-                <input type="text" class="form-control mt-1" placeholder="Nome" name="nome" id="nome" required autofocus>
+                <input type="text" class="form-control mt-1" name="nome" id="nome" placeholder="Nome" required autofocus>
                 <label for="Nome">*Nome</label>
             </div>
 
             <div class="form-floating">
-                <input type="text" class="form-control mt-1" placeholder="Email" name="login" id="login" required>
+                <input type="email" class="form-control mt-1" name="login" id="login" placeholder="Email" required>
                 <label for="Login">*Email</label>
             </div>
 
