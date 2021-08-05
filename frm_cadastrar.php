@@ -10,17 +10,17 @@
             <center><img class="mb-4" src="images/riosoft.png" alt="" width="200"></center>
 
             <div class="form-floating">
-                <input type="text" class="form-control" placeholder="Nome" name="nome" id="nome" required autofocus>
+                <input type="text" class="form-control mt-1" placeholder="Nome" name="nome" id="nome" required autofocus>
                 <label for="Nome">*Nome</label>
             </div>
 
             <div class="form-floating">
-                <input type="text" class="form-control" placeholder="Email" name="login" id="login" required>
+                <input type="text" class="form-control mt-1" placeholder="Email" name="login" id="login" required>
                 <label for="Login">*Email</label>
             </div>
 
             <div class="form-floating">
-                <input type="password" class="form-control" name="senha" id="senha" placeholder="Senha" required>
+                <input type="password" class="form-control mt-1" name="senha" id="senha" placeholder="Senha" required>
                 <label for="Senha">*Senha</label>
             </div>
 
@@ -39,6 +39,14 @@
 
 
         </form>
+
+        <table>
+        <th><img src="images/logotipo_riosoft.png" alt="" width="150"></th>
+        <th><p>Copyright © 2021 | Cia Brasileira de Software e Serviços LTDA.</p>
+        <p>Todos os direitos reservados. http://www.riosoft.com.br</p>
+        <p>Compilação: 03/05/2021 12:38:30 - Build: 275 (MIX) (Riosoft)</p></th>
+        </table>
+
     </div>
 </div>
 

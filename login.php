@@ -10,25 +10,25 @@
             <center><img class="mb-4" src="images/riosoft.png" alt="" width="200"></center>
 
             <div class="form-floating">
-                <input type="text" class="form-control" placeholder="Email" name="login" id="login">
+                <input type="text" class="form-control" name="login" id="login" placeholder="Email">
                 <label for="login">*Email</label>
             </div>
 
             <div class="form-floating">
-                <input type="password" class="form-control" name="senha" id="senha" placeholder="Senha">
+                <input type="password" class="form-control mt-1" name="senha" id="senha" placeholder="Senha">
                 <label for="senha">*Senha</label>
             </div>
 
-            <div>
-            <center><label for="Cadastro">
+            <div class="text-center">
+            <label for="Cadastro">
                 <a href="frm_cadastrar.php">Não tenho conta!</a>
-            </center></label>
+            </label>
             </div>
 
-            <div name="divCheck" class="checkbox mb-3">
-            <center><label for="CheckBox">
+            <div name="divCheck" class="checkbox mb-3 text-center">
+            <label for="CheckBox">
                 <input type="checkbox">Lembrar-me!</input>
-            </center></label>
+            </label>
             </div>
 
             <button class="w-100 btn btn-lg btn-dark" type="submit" name="btnEntrar" id="btnEntrar">CONECTAR</button>
