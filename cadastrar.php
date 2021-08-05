@@ -1,31 +1,42 @@
-<?php require 'header.php'?>
+<?php require 'header.php';
+
+session_start();
+if (isset($_SESSION['mensagem']))
+{
+  echo $_SESSION['mensagem'];
+  session_destroy();
+}
+
+?>
+
+
 
 <div class="container">
     <h1 style="text-align: center;">Cadastro</h1>
-<form action="index.php" method="post">
+<form action="Model_Cadastrar.php" method="post">
     
   <div class="mb-3">
     <label for="email1" class="form-label">Nome:</label>
-    <input type="email" name="email" class="form-control" id="nome" aria-describedby="nome" placeholder="Digite seu nome" autofocus>
+    <input type="text" name="nome" class="form-control" id="nome" aria-describedby="nome" placeholder="Digite seu nome" autofocus>
   </div>
 
   <div class="mb-3">
     <label for="email1" class="form-label">Email:</label>
-    <input type="email" class="form-control" id="email" aria-describedby="email" placeholder="Digite seu e-mail" autofocus>
+    <input type="email" class="form-control" id="email" aria-describedby="email" placeholder="Digite seu e-mail" name="email">
   </div>
 
   <div class="mb-3">
     <label for="senha1" class="form-label">Senha</label>
-    <input type="password" class="form-control" id="senha1" placeholder="Digite sua senha">
+    <input type="password" class="form-control" id="senha1" placeholder="Digite sua senha" name="senha1">
   </div>
 
   <div class="mb-3">
     <label for="senha2" class="form-label">Confirme sua senha</label>
-    <input type="password" class="form-control" id="senha2" placeholder="Digite sua senha novamente">
+    <input type="password" class="form-control" id="senha2" placeholder="Digite sua senha novamente" name="senha2">
   </div>
 
   <div class="mb-3 form-check">
-    <input type="checkbox" class="form-check-input" id="Entrar">
+    <input type="checkbox" class="form-check-input" id="entrar_diretamente" name="entrar_diretamente">
     <label class="form-check-label" for="lembre1">Entrar diretamente</label>
   </div>
  

@@ -3,7 +3,7 @@
 <div class="container">
     <h1 style="text-align: center;">Login</h1>
 
-<form action="index.php" method="POST">
+<form action="logar.php" method="POST">
   <div class="mb-3">
     <label for="email1" class="form-label">Email:</label>
     <input type="email" name="email" class="form-control" id="email" aria-describedby="email" placeholder="Digite seu e-mail" autofocus>
