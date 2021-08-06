@@ -3,20 +3,20 @@
 <div class="container">
     <h1 style="text-align: center;">Login</h1>
 
-<form action="logar.php" method="POST">
+<form action="../Model/Model_Logar.php" method="POST">
   <div class="mb-3">
     <label for="email1" class="form-label">Email:</label>
-    <input type="email" name="email" class="form-control" id="email" aria-describedby="email" placeholder="Digite seu e-mail" autofocus>
+    <input type="email" name="email" class="form-control" id="email" aria-describedby="email" placeholder="Digite seu e-mail" autofocus required>
   </div>
 
   <div class="mb-3">
     <label for="senha1" class="form-label">Senha</label>
-    <input type="password" name="senha" class="form-control" id="senha" placeholder="Digite sua senha">
+    <input type="password" name="senha" class="form-control" id="senha" placeholder="Digite sua senha" required>
   </div>
 
   <div class="mb-3 form-check">
-    <input type="checkbox" class="form-check-input" id="lembre">
-    <label class="form-check-label" name="lembrar" for="lembre1">Lembre de mim</label>
+    <input type="checkbox" class="form-check-input" id="lembrar" name="lembrar">
+    <label class="form-check-label" for="lembrar">Lembrar</label>
 
   </div>
  
