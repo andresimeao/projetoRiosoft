@@ -1,0 +1,11 @@
+{
+	"name":"projeto/riosoft",
+	"autoload": {
+		"psr-4" : {
+            "App\\":"app/"
+		}
+	},
+	"require": {
+
+	}
+}

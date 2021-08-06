@@ -31,7 +31,7 @@
 
             <div>
             <center><label for="Login" class="text-center">
-                <a href="login.php">Já possuo cadastro!</a>
+                <a href="index.php">Já possuo cadastro!</a>
             </center></label>
             </div>
 
@@ -42,7 +42,7 @@
 
         <table>
         <th><img src="images/logotipo_riosoft.png" alt="" width="150"></th>
-        <th><p>Copyright © 2021 | Cia Brasileira de Software e Serviços LTDA.</p>
+        <th class="font-footer"><p>Copyright © 2021 | Cia Brasileira de Software e Serviços LTDA.</p>
         <p>Todos os direitos reservados. http://www.riosoft.com.br</p>
         <p>Compilação: 03/05/2021 12:38:30 - Build: 275 (MIX) (Riosoft)</p></th>
         </table>

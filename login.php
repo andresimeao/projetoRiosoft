@@ -1,49 +1,41 @@
-<?php require_once 'header.php'?>
+<?php
 
-    <title>Login - Riosoft</title>
-</head>
-<body>
-<div class="container">
-    <div class="form-signin">
-        <form action="" method="POST">
+/*1- fazendo a chamada do arquivo com informacoes da conexao */
+  
+	require "conexao.php";
 
-            <center><img class="mb-3" src="images/riosoft.png" alt="" width="200"></center>
+/*2- pegando os dados vindos do formulario e armazenando em variaveis */
+ 
+	$login=$_POST["login"];
+	$senha=$_POST["senha"];
+	
+/*3- criando o comando sql para insercao do registro */
+ 
+	$comandoSql="select * from tb_usuario where login_usuario = '$login' and senha_usuario='$senha'";
 
-            <div class="form-floating">
-                <input type="email" class="form-control" name="login" id="login" placeholder="Email">
-                <label for="login">*Email</label>
-            </div>
+/*4- executando o comando sql */
+	
+	$resultado=mysqli_query($con,$comandoSql);
 
-            <div class="form-floating">
-                <input type="password" class="form-control mt-1" name="senha" id="senha" placeholder="Senha">
-                <label for="senha">*Senha</label>
-            </div>
+/*5- verificando se o comando sql foi executado */
 
-            <div class="text-center">
-            <label for="Cadastro">
-                <a href="frm_cadastrar.php">Não tenho conta!</a>
-            </label>
-            </div>
+	if(mysqli_num_rows($resultado) <= 0){
+		
+		header("Location:index.php");
 
-            <div name="divCheck" class="checkbox mb-3 text-center">
-            <label for="CheckBox">
-                <input type="checkbox">Lembrar-me!</input>
-            </label>
-            </div>
+	}else{
+		
+		$dados=mysqli_fetch_assoc($resultado);
 
-            <button class="w-100 btn btn-lg btn-dark" type="submit" name="btnEntrar" id="btnEntrar">CONECTAR</button>
+		$nome=$dados["nome_usuario"];
+		$tipo=$dados["tipo_usuario"];
 
+		session_start();
+		$_SESSION["n"]=$nome;
+		$_SESSION["t"]=$tipo;
 
-        </form>
+		header("Location:principal.php");
 
-        <table>
-        <th><img src="images/logotipo_riosoft.png" alt="" width="120"></th>
-        <th class="font-footer"><p>Copyright © 2021 | Cia Brasileira de Software e Serviços LTDA.</p>
-        <p>Todos os direitos reservados. http://www.riosoft.com.br</p>
-        <p>Compilação: 03/05/2021 12:38:30 - Build: 275 (MIX) (Riosoft)</p></th>
-        </table>
+	}
 
-    </div>
-</div>
-
-<?php require_once 'footer.php'?>
+?>

@@ -1,4 +1,8 @@
-<?php require 'header.php';?>
+
+<?php require __DIR__.DIRECTORY_SEPARATOR.'include'.DIRECTORY_SEPARATOR.'app.php';
+      
+      require 'header.php';
+?>
 
 
     

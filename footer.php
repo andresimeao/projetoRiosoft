@@ -1,3 +1,4 @@
+<hr class="bg-light">
 <!-- todas as libs javascripts-->
     <script src="libs/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="libs/jquery/jquery-3.6.0.min.js"></script>
