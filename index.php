@@ -7,7 +7,7 @@
     <div class="form-signin">
         <form action="" method="POST">
 
-            <center><img class="mb-3" src="images/riosoft.png" alt="" width="200"></center>
+            <center><img class="mb-3" src="img/riosoft.png" alt="" width="200"></center>
 
             <div class="form-floating">
                 <input type="email" class="form-control" name="login" id="login" placeholder="Email">
@@ -37,7 +37,7 @@
         </form>
 
         <table>
-        <th><img src="images/logotipo_riosoft.png" alt="" width="120"></th>
+        <th><img src="img/logotipo_riosoft.png" alt="" width="120"></th>
         <th class="font-footer"><p>Copyright © 2021 | Cia Brasileira de Software e Serviços LTDA.</p>
         <p>Todos os direitos reservados. http://www.riosoft.com.br</p>
         <p>Compilação: 03/05/2021 12:38:30 - Build: 275 (MIX) (Riosoft)</p></th>
